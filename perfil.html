@@ -3,43 +3,125 @@
 <head>
     <title>perfil</title>
     <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="Encabezao">
-        <form action="menuprincipal.html">
-            <button><i class="fa-solid fa-arrow-left"></i></button>
-        </form>
-        <form action="search.html">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <form action="subir_imagen.html">
-            <button type="submit"><i class="fa-solid fa-circle-plus"></i></button>
-        </form>
-        <form action="perfil.html">
-            <button type="submit"><i class="fa-solid fa-user"></i></button><br />
-        </form>
-    </div>
-    <img src="imgs/imgp.jpg" alt="" />
-    <div class="InfoPerfil">
-        <h1>"Nombre De Usuario"</h1> <br />
-        <button><i class="fa-regular fa-star"></i></button><button><i class="fa-regular fa-comment"></i></button>
-        <form action="ajustes.html">
-           <button><i class="fa-solid fa-bars"></i></button>
-        </form>
-        <button><i class="fa-regular fa-bookmark"></i></button> <br />
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sapien conubia scelerisque, platea metus sociis nulla pulvinar porttitor feugiat lectus arcu, diam eget luctus facilisis massa a dapibus at tempor. 
-            Nascetur fringilla egestas et iaculis mauris sed mus ullamcorper mattis, habitant sociosqu curae curabitur dignissim facilisis nullam ac, duis aliquam gravida venenatis elementum urna quisque sociis. Conubia vestibulum 
-            tincidunt lacinia nascetur fames mus, libero euismod primis nullam per hendrerit sociis, faucibus vehicula molestie pulvinar accumsan.
-        </p>
-    </div>
-    <h1>Publicaciones</h1>
-    <div class="Imagenes">
-        <img src="imgs/img1.jpg" alt="" /><img src="imgs/img2.jpg" alt="" /> <br />
-        <img src="imgs/img3.jpg" alt="" /><img src="imgs/img4.jpg" alt="" /> <br />
-        <img src="imgs/img5.jpg" alt="" />
-    </div>
 
-</body>
+    <style>
+
+        body 
+        {
+            height: 100vh;
+            display: flex;
+            place-items: center;
+        }
+
+        
+        
+        .InfoPerfil
+        {
+
+            height: 500px;
+            width: 1500px;
+            background-color:aqua;
+            margin-top: 60px;
+            display: flex;
+        }
+
+        .FPerfil
+        {
+            height: 400px;
+            width: 400px;
+            border-radius: 100%;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .TBN
+        {
+            height: 400px;
+            width: 1000px;
+            background-color:yellow;
+            padding-top: 80px;
+            padding-left: 20px;
+            display:block;
+        }
+
+        .NU
+        {
+            font-size: 50px;
+            background-color: blueviolet;
+        }
+
+        .List ul
+        {
+
+            height: 40px;
+            width: 100px;
+            list-style: none;
+            display: flex;
+            
+        }
+
+
+        .List ul a i 
+        {
+
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: forestgreen;
+        }
+
+        .IU
+        {
+
+        }
+
+    </style>
+</head>
+<body class="EncabezadoBD">
+    <div class="Encabezado">
+        <nav>
+            <ul>
+                <li><a href="menuprincipal.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="subir_imagen.htm"><i class="fa-solid fa-add"></i></a></li>
+                <li><a href="perfil.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </body>
+        <body>
+            <div class="InfoPerfil">
+                <img class="FPerfil" src="imgs/imgp.jpg" alt="" />
+                <div class="TBN">
+                    <div class="dis">
+                        <h1 class="NU">"Nombre De Usuario"</h1>
+                        <nav class="List">
+                            <ul>
+                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                                <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p class="IU">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sapien conubia scelerisque, platea metus sociis nulla pulvinar porttitor feugiat lectus arcu, diam eget luctus facilisis massa a dapibus at tempor.
+                        Nascetur fringilla egestas et iaculis mauris sed mus ullamcorper mattis, habitant sociosqu curae curabitur dignissim facilisis nullam ac, duis aliquam gravida venenatis elementum urna quisque sociis. Conubia vestibulum
+                        tincidunt lacinia nascetur fames mus, libero euismod primis nullam per hendrerit sociis, faucibus vehicula molestie pulvinar accumsan.
+                    </p>
+                </div>
+            </div>
+            <h1>Publicaciones</h1>
+            <div class="Imagenes">
+                <img src="imgs/img1.jpg" alt="" /><img src="imgs/img2.jpg" alt="" /> 
+                <img src="imgs/img3.jpg" alt="" /><img src="imgs/img4.jpg" alt="" /> 
+                <img src="imgs/img5.jpg" alt="" />
+            </div>
+
+        </body>
 </html>
