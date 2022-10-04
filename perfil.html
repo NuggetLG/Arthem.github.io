@@ -9,11 +9,18 @@
 
     <style>
 
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
         body 
         {
-            height: 100vh;
+            height: auto;
             display: flex;
             place-items: center;
+            background-color: gray;
         }
 
         
@@ -21,36 +28,33 @@
         .InfoPerfil
         {
 
-            height: 500px;
-            width: 1500px;
-            background-color:aqua;
+            height: auto;
+            width: 600px;
             margin-top: 60px;
             display: flex;
+            flex-wrap:wrap;
         }
 
-        .FPerfil
-        {
-            height: 400px;
-            width: 400px;
+        .FPerfil {
+            height: 200px;
+            width: 200px;
             border-radius: 100%;
             padding-top: 50px;
-            padding-left: 20px;
+            padding-left: 10px;
         }
 
-        .TBN
+        .dis
         {
-            height: 400px;
-            width: 1000px;
-            background-color:yellow;
+            height: auto;
+            width: 400px;
             padding-top: 80px;
-            padding-left: 20px;
-            display:block;
+            padding-left: 5px;
+
         }
 
         .NU
         {
-            font-size: 50px;
-            background-color: blueviolet;
+            font-size: 40px;
         }
 
         .List ul
@@ -70,14 +74,32 @@
             width: 50px;
             height: 50px;
             display: flex;
+            font-size: 25px;
             justify-content: center;
             align-items: center;
-            background-color: forestgreen;
         }
 
         .IU
         {
+            padding-top: 15px;
+            height:auto;
+            width:600px;
+        }
 
+        .Imagenes {
+            height: auto;
+            width: 600px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            justify-content: space-evenly;
+            place-items: center;
+            gap: 5px;
+        }
+
+        .TT
+        {
+            text-align: center;
+            margin-top: 10px;
         }
 
     </style>
@@ -96,31 +118,32 @@
     </body>
         <body>
             <div class="InfoPerfil">
-                <img class="FPerfil" src="imgs/imgp.jpg" alt="" />
-                <div class="TBN">
-                    <div class="dis">
-                        <h1 class="NU">"Nombre De Usuario"</h1>
-                        <nav class="List">
-                            <ul>
-                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
-                                <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                <img class="FPerfil" src="imgs/imgp.jpg" alt=""/>
+                <div class="dis">
+                    <h1 class="NU">"Nombre De Usuario"</h1>
+                    <nav class="List">
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                            <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
                     <p class="IU">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit sapien conubia scelerisque, platea metus sociis nulla pulvinar porttitor feugiat lectus arcu, diam eget luctus facilisis massa a dapibus at tempor.
                         Nascetur fringilla egestas et iaculis mauris sed mus ullamcorper mattis, habitant sociosqu curae curabitur dignissim facilisis nullam ac, duis aliquam gravida venenatis elementum urna quisque sociis. Conubia vestibulum
                         tincidunt lacinia nascetur fames mus, libero euismod primis nullam per hendrerit sociis, faucibus vehicula molestie pulvinar accumsan.
                     </p>
-                </div>
+                
             </div>
-            <h1>Publicaciones</h1>
-            <div class="Imagenes">
-                <img src="imgs/img1.jpg" alt="" /><img src="imgs/img2.jpg" alt="" /> 
-                <img src="imgs/img3.jpg" alt="" /><img src="imgs/img4.jpg" alt="" /> 
-                <img src="imgs/img5.jpg" alt="" />
+            <div >
+                <h1 class="TT" >Publicaciones</h1>
+                <div class="Imagenes">
+                    <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
+                    <img class="Imagen" src="imgs/img3.jpg" alt="" /><img class="Imagen" src="imgs/img4.jpg" alt="" />
+                    <img class="Imagen" src="imgs/img5.jpg" alt="" />
+                </div>
             </div>
 
         </body>

@@ -5,6 +5,66 @@
     <meta charset="utf-8" />
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body {
+            height: auto;
+            display: flex;
+            place-items: center;
+            background-color: gray;
+        }
+
+        .IMG
+        {
+            margin-top:60px;
+            height:auto;
+            width: 550px;
+        }
+
+        .div1
+        {
+            background-color:aqua;
+            height: auto;
+            width:600px;
+        }
+
+        h2
+        {
+            text-align:center;
+            font-size: 40px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .tagsE {
+            display: grid;
+            grid-template-columns: repeat(3,190px);
+            height: auto;
+            width: 600px;
+            background-color: aqua;
+            justify-content: space-evenly;
+            gap:5px;
+        }
+
+        .BTNP
+        {
+            font-size: 50px;
+        }
+
+
+    </style>
+
 </head>
 <body class="EncabezadoBD">
     <div class="Encabezado">
@@ -20,19 +80,21 @@
 </body>
 
 <body>
-    <img src="imgs/img1.jpg" alt="" /> <br />
-    <h2>Titulo de la imagen</h2><br />
-    <p>"Nombre"</p><br />
+    <img class="IMG" src="imgs/img1.jpg" alt="" /> <br />
+    <div class="div1">
+        <h2>Titulo de la imagen</h2><br />
+        <p>"Nombre"</p><br />
+    </div>
     <h2>Tags</h2>
     <div class="tagsE">
-        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> <br />
-        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> <br />
-        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> <br />
+        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> 
+        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> 
+        <button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button><button><img src="imgs/imgt.jpg" alt="" /></button> 
     </div>
     <h2>Otro tag?</h2><br />
     <p>"tag"</p> <br />
     <form action="menuprincipal.html">
-        <button>Publicar</button>
+        <button class="BTNP">Publicar</button>
      </form>
 
 
