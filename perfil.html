@@ -9,7 +9,7 @@
 
     <style>
 
-        @media(width:360px)
+        @media(max-width:800px)
         {
             * {
                 box-sizing: border-box;
@@ -24,51 +24,60 @@
                 background-color: gray;
             }
 
-
+            .Contenedor
+            {
+                width: 100%;
+                height:auto;
+                background-color:aqua;
+                place-items:center;
+                margin:50px;
+                box-sizing:border-box;
+            }
 
             .InfoPerfil {
                 height: auto;
-                width: 360px;
-                margin-top: 30px;
-                padding-left: 5px;
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                box-sizing:border-box;
             }
 
             .FPerfil {
-                height: 120px;
-                width: 100px;
+                height: 40%;
+                width: 40%;
                 border-radius: 100%;
-                padding-top: 50px;
+                padding-top: 25px;
                 padding-left: 10px;
             }
 
             .dis {
                 height: auto;
-                width: 200px;
+                width: 60%;
                 padding-top: 50px;
                 padding-left: 5px;
+                box-sizing: border-box;
             }
 
             .NU {
                 padding-top: 5px;
-                font-size: 20px;
+                font-size: 5vw;
             }
 
             .List ul {
-                height: 40px;
-                width: 50px;
+                height: auto;
+                width: 100%;
                 list-style: none;
                 display: flex;
+                justify-content: space-evenly;
             }
 
 
                 .List ul a i {
-                    width: 25px;
-                    height: 50px;
+                    width: 90%;
+                    height: auto;
                     display: flex;
-                    font-size: 12px;
-                    justify-content: center;
+                    font-size: 3vw;
+                    justify-content: space-evenly;
                     align-items: center;
                 }
 
@@ -76,17 +85,17 @@
                 padding-top: 15px;
                 margin: 10px;
                 height: auto;
-                width: 360px;
+                width: 100%;
             }
 
             .Imagenes {
                 height: auto;
-                width: 360px;
+                width: 100%;
                 display: grid;
-                grid-template-columns: 150px 150px;
+                grid-template-columns: 50% 50%;
                 justify-content: space-evenly;
                 place-items: center;
-                gap: 5px;
+                gap: 3px;
             }
 
             .TT {
@@ -95,12 +104,12 @@
             }
 
             .Imagen {
-                width: 170px;
-                height: 170px;
+                width: 100%;
+                height: 100%;
             }
         }
 
-        @media(width:1440px)
+        @media(min-width:801px)
         {
             * {
                 box-sizing: border-box;
@@ -115,34 +124,46 @@
                 background-color: gray;
             }
 
+            .Contenedor
+            {
+                width: 80%;
+                max-width: 2000px;
+                background-color: aqua;
+                place-items:center;
+            }
 
 
             .InfoPerfil {
                 height: auto;
-                width: 1440px;
-                margin-top: 50px;
+                width: 100%;
+                margin-top: 20px;
                 padding-left: 5px;
                 display: flex;
             }
 
             .FPerfil {
-                height: 300px;
-                width: 300px;
+                height: 40%;
+                width: 40%;
+                max-height: 400px;
+                max-width: 400px;
                 border-radius: 100%;
                 padding-top: 30px;
                 padding-left: 10px;
+                box-sizing: border-box;
             }
 
             .dis {
                 height: auto;
-                width: 1000px;
+                width: 60%;
                 padding-top: 100px;
                 padding-left: 5px;
+                margin:15px;
+                box-sizing: border-box;
             }
 
             .NU {
                 padding-top: 5px;
-                font-size: 40px;
+                font-size: 1.8vw;
             }
 
             .List ul {
@@ -150,31 +171,34 @@
                 width: 150px;
                 list-style: none;
                 display: flex;
+                justify-content: space-evenly;
             }
 
 
                 .List ul a i {
-                    width: 75px;
-                    height: 50px;
+                    width: 100%;
+                    height: auto;
                     display: flex;
-                    font-size: 30px;
-                    justify-content: center;
+                    font-size: 2vw;
+                    justify-content: space-evenly;
                     align-items: center;
+                    gap:5px;
                 }
 
             .IU {
                 padding-top: 90px;
                 margin: 10px;
                 height: auto;
-                width: 1440px;
-                font-size: 20px;
+                width: 100%;
+                font-size: 1vw;
+                box-sizing:border-box;
             }
 
             .Imagenes {
                 height: auto;
-                width: 1440px;
+                width: 100%;
                 display: grid;
-                grid-template-columns: 230px 230px 230px 230px 230px 230px;
+                grid-template-columns: 15% 15% 15% 15% 15% 15% ;
                 justify-content: space-evenly;
                 place-items: center;
                 gap: 5px;
@@ -186,8 +210,12 @@
             }
 
             .Imagen {
-                width: 220px;
-                height: 220px;
+
+                width: 100%;
+                height: 100%;
+
+                max-width: 220px;
+                max-height: 220px;
             }
         }
 
@@ -206,35 +234,36 @@
     </div>
     </body>
         <body>
-            <div class="InfoPerfil">
-                <img class="FPerfil" src="imgs/imgp.jpg" alt=""/>
-                <div class="dis">
-                    <h1 class="NU">"Nombre De Usuario"</h1>
-                    <nav class="List">
-                        <ul>
-                            <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
-                            <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="Contenedor">
+                <div class="InfoPerfil">
+                    <img class="FPerfil" src="imgs/imgp.jpg" alt="" />
+                    <div class="dis">
+                        <h1 class="NU">"Nombre De Usuario"</h1>
+                        <nav class="List">
+                            <ul>
+                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                                <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <p class="IU">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit sapien conubia scelerisque, platea metus sociis nulla pulvinar porttitor feugiat lectus arcu, diam eget luctus facilisis massa a dapibus at tempor.
                         Nascetur fringilla egestas et iaculis mauris sed mus ullamcorper mattis, habitant sociosqu curae curabitur dignissim facilisis nullam ac, duis aliquam gravida venenatis elementum urna quisque sociis. Conubia vestibulum
                         tincidunt lacinia nascetur fames mus, libero euismod primis nullam per hendrerit sociis, faucibus vehicula molestie pulvinar accumsan.
                     </p>
-                
-            </div>
-            <div >
-                <h1 class="TT" >Publicaciones</h1>
-                <div class="Imagenes">
-                    <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
-                    <img class="Imagen" src="imgs/img3.jpg" alt="" /><img class="Imagen" src="imgs/img4.jpg" alt="" />
-                    <img class="Imagen" src="imgs/img5.jpg" alt="" /><img class="Imagen" src="imgs/px2.jpg" alt="" />
-                    <img class="Imagen" src="imgs/px3.jpg" alt="" />
+
+                </div>
+                <div>
+                    <h1 class="TT">Publicaciones</h1>
+                    <div class="Imagenes">
+                        <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
+                        <img class="Imagen" src="imgs/img3.jpg" alt="" /><img class="Imagen" src="imgs/img4.jpg" alt="" />
+                        <img class="Imagen" src="imgs/img5.jpg" alt="" /><img class="Imagen" src="imgs/px2.jpg" alt="" />
+                        <img class="Imagen" src="imgs/px3.jpg" alt="" />
+                    </div>
                 </div>
             </div>
-
         </body>
 </html>
