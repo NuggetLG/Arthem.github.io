@@ -9,97 +9,186 @@
 
     <style>
 
-        *{
-            box-sizing: border-box;
-            margin:0;
-            padding:0;
-        }
-
-        body 
+        @media(width:360px)
         {
-            height: auto;
-            display: flex;
-            place-items: center;
-            background-color: gray;
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: gray;
+            }
+
+
+
+            .InfoPerfil {
+                height: auto;
+                width: 360px;
+                margin-top: 30px;
+                padding-left: 5px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .FPerfil {
+                height: 120px;
+                width: 100px;
+                border-radius: 100%;
+                padding-top: 50px;
+                padding-left: 10px;
+            }
+
+            .dis {
+                height: auto;
+                width: 200px;
+                padding-top: 50px;
+                padding-left: 5px;
+            }
+
+            .NU {
+                padding-top: 5px;
+                font-size: 20px;
+            }
+
+            .List ul {
+                height: 40px;
+                width: 50px;
+                list-style: none;
+                display: flex;
+            }
+
+
+                .List ul a i {
+                    width: 25px;
+                    height: 50px;
+                    display: flex;
+                    font-size: 12px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            .IU {
+                padding-top: 15px;
+                margin: 10px;
+                height: auto;
+                width: 360px;
+            }
+
+            .Imagenes {
+                height: auto;
+                width: 360px;
+                display: grid;
+                grid-template-columns: 150px 150px;
+                justify-content: space-evenly;
+                place-items: center;
+                gap: 5px;
+            }
+
+            .TT {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .Imagen {
+                width: 170px;
+                height: 170px;
+            }
         }
 
-        
-        
-        .InfoPerfil
+        @media(width:1440px)
         {
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-            height: auto;
-            width: 600px;
-            margin-top: 60px;
-            display: flex;
-            flex-wrap:wrap;
-        }
-
-        .FPerfil {
-            height: 200px;
-            width: 200px;
-            border-radius: 100%;
-            padding-top: 50px;
-            padding-left: 10px;
-        }
-
-        .dis
-        {
-            height: auto;
-            width: 400px;
-            padding-top: 80px;
-            padding-left: 5px;
-
-        }
-
-        .NU
-        {
-            font-size: 40px;
-        }
-
-        .List ul
-        {
-
-            height: 40px;
-            width: 100px;
-            list-style: none;
-            display: flex;
-            
-        }
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: gray;
+            }
 
 
-        .List ul a i 
-        {
 
-            width: 50px;
-            height: 50px;
-            display: flex;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-        }
+            .InfoPerfil {
+                height: auto;
+                width: 1440px;
+                margin-top: 50px;
+                padding-left: 5px;
+                display: flex;
+            }
 
-        .IU
-        {
-            padding-top: 15px;
-            height:auto;
-            width:600px;
-        }
+            .FPerfil {
+                height: 300px;
+                width: 300px;
+                border-radius: 100%;
+                padding-top: 30px;
+                padding-left: 10px;
+            }
 
-        .Imagenes {
-            height: auto;
-            width: 600px;
-            display: grid;
-            grid-template-columns: 300px 300px;
-            justify-content: space-evenly;
-            place-items: center;
-            gap: 5px;
-        }
+            .dis {
+                height: auto;
+                width: 1000px;
+                padding-top: 100px;
+                padding-left: 5px;
+            }
 
-        .TT
-        {
-            text-align: center;
-            margin-top: 10px;
+            .NU {
+                padding-top: 5px;
+                font-size: 40px;
+            }
+
+            .List ul {
+                height: 140px;
+                width: 150px;
+                list-style: none;
+                display: flex;
+            }
+
+
+                .List ul a i {
+                    width: 75px;
+                    height: 50px;
+                    display: flex;
+                    font-size: 30px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            .IU {
+                padding-top: 90px;
+                margin: 10px;
+                height: auto;
+                width: 1440px;
+                font-size: 20px;
+            }
+
+            .Imagenes {
+                height: auto;
+                width: 1440px;
+                display: grid;
+                grid-template-columns: 230px 230px 230px 230px 230px 230px;
+                justify-content: space-evenly;
+                place-items: center;
+                gap: 5px;
+            }
+
+            .TT {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .Imagen {
+                width: 220px;
+                height: 220px;
+            }
         }
 
     </style>
@@ -142,7 +231,8 @@
                 <div class="Imagenes">
                     <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
                     <img class="Imagen" src="imgs/img3.jpg" alt="" /><img class="Imagen" src="imgs/img4.jpg" alt="" />
-                    <img class="Imagen" src="imgs/img5.jpg" alt="" />
+                    <img class="Imagen" src="imgs/img5.jpg" alt="" /><img class="Imagen" src="imgs/px2.jpg" alt="" />
+                    <img class="Imagen" src="imgs/px3.jpg" alt="" />
                 </div>
             </div>
 
