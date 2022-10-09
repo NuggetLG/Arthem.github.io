@@ -157,3 +157,26 @@ body{
 				}
 
 }
+
+@font-face
+{
+	font-family:'Titulo';
+	src:url(../Fonts/Poppins-Medium.ttf);
+
+	
+}
+@font-face
+{
+		font-family:'Texto';
+	src:url(../Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+#Titulo
+{
+	font-family:Titulo;
+}
+
+#Texto
+{
+	font-family:Texto;
+}

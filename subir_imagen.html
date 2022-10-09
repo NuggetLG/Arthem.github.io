@@ -36,30 +36,65 @@
                 display: flex;
                 place-items: center;
                 background-color: lightslategrey;
+                margin-bottom: 100px;
             }
 
             .IMG {
                 margin-top: 40px;
                 height: auto;
                 width: 90%;
+                margin-left: 5%;
             }
 
             .tagsE {
                 display: grid;
-                grid-template-columns: repeat(3,33%);
+                grid-template-columns: repeat(3,25%);
                 height: auto;
                 width: 100%;
                 justify-content: space-evenly;
-                gap: 2px;
             }
 
-            .BTNT {
-                height: auto;
-                width: 50%;
+            .tagsE button
+            {
+                font-size: 4vw;
+                margin:10px;
+                height:80%;
+                border-style:none;
+                background-color:cornflowerblue;
+                border-radius:20px;
+                cursor: pointer;
+
+            }
+
+            .butondiv {
+
+                background-color: cornflowerblue;
+                display:grid;
+                height:50%;
+                width:30%;
+                border-radius:20px;
+                margin-top:50px;
+                margin-left: 35%;
+                place-content:center;
+                
+
             }
 
             .BTNP {
-                font-size: 25px;
+                font-size: 6vw;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                pointer-events: auto;
+                cursor: pointer;
+            }
+
+            h2 
+            {
+                text-align:center;
+                margin:10px;
+                font-size: 6vw;
+                color:white;
             }
         }
 
@@ -116,12 +151,7 @@
                 width: 100%;
                 justify-content: space-evenly;
                 gap: 2px;
-            }
-
-            .BTNT {
-                height: auto;
-                width: 50%;
-            }
+            } 
 
             .BTNP {
                 margin:5px;
@@ -157,15 +187,17 @@
     <div class="SDiv">
         <img class="IMG" src="imgs/img1.jpg" alt="" /> <br />
                                                        <div class="htb">
-                                                           <h2>Tags</h2>
+                                                           <h2 id="Titulo">Tags</h2>
                                                            <div class="tagsE">
-                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
-                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
-                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
+                                                               <button>Texto</button><button>Texto</button><button>Texto</button>
+                                                               <button>Texto</button><button>Texto</button><button>Texto</button>
+                                                               <button>Texto</button><button>Texto</button><button>Texto</button>
                                                            </div>
-                                                           <form action="menuprincipal.html">
-                                                               <button class="BTNP">Publicar</button>
-                                                           </form>
+                                                           <div class="butondiv">
+                                                               <form action="menuprincipal.html">
+                                                                   <button class="BTNP">Publicar</button>
+                                                               </form>
+                                                           </div>
                                                        </div>
         
     </div>
