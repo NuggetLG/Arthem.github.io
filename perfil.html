@@ -21,17 +21,43 @@
                 height: auto;
                 display: flex;
                 place-items: center;
-                background-color: gray;
+                background-color:white;
             }
 
             .Contenedor
             {
                 width: 100%;
                 height:auto;
-                background-color:aqua;
                 place-items:center;
-                margin:50px;
                 box-sizing:border-box;
+            }
+
+            .ContenedorChiquito
+            {
+                margin-top:50px;
+                height: auto;
+                width:100%;
+                display: flex;
+                justify-content:space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                color: lightslategrey;
+            }
+
+            .B
+            {
+                height:auto;
+                width:100%;
+            }
+
+            .ContenedorImg
+            {
+                height:auto;
+                width:12%;
+                background-color:cornsilk;
+                border-radius:15px;
             }
 
             .InfoPerfil {
@@ -40,11 +66,12 @@
                 display: flex;
                 flex-wrap: wrap;
                 box-sizing:border-box;
+                place-content:center;
             }
 
             .FPerfil {
-                height: 40%;
-                width: 40%;
+                height: 35%;
+                width: 35%;
                 border-radius: 100%;
                 padding-top: 25px;
                 padding-left: 10px;
@@ -56,11 +83,16 @@
                 padding-top: 50px;
                 padding-left: 5px;
                 box-sizing: border-box;
+                display:flex;
+                flex-wrap:wrap;
+                place-content:center;
             }
 
             .NU {
-                padding-top: 5px;
-                font-size: 5vw;
+                font-size: 6vw;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis
             }
 
             .List ul {
@@ -69,23 +101,29 @@
                 list-style: none;
                 display: flex;
                 justify-content: space-evenly;
+                gap:5px;
             }
 
 
-                .List ul a i {
+                .List ul a img {
                     width: 90%;
                     height: auto;
                     display: flex;
-                    font-size: 3vw;
                     justify-content: space-evenly;
                     align-items: center;
                 }
 
             .IU {
+
                 padding-top: 15px;
                 margin: 10px;
                 height: auto;
-                width: 100%;
+                width: 90%;
+                background-color:lightslategrey;
+                border-radius:15px;
+                text-align:center;
+
+                color:white;
             }
 
             .Imagenes {
@@ -96,6 +134,7 @@
                 justify-content: space-evenly;
                 place-items: center;
                 gap: 3px;
+                background-color: lightslategrey;
             }
 
             .TT {
@@ -104,8 +143,8 @@
             }
 
             .Imagen {
-                width: 100%;
-                height: 100%;
+                width: 90%;
+                height: 90%;
             }
         }
 
@@ -115,6 +154,31 @@
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            .ContenedorImg {
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+
+            .ContenedorChiquito {
+                margin-top: 50px;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                color: lightslategrey;
             }
 
             body {
@@ -159,6 +223,7 @@
                 padding-left: 5px;
                 margin:15px;
                 box-sizing: border-box;
+                
             }
 
             .NU {
@@ -175,7 +240,7 @@
             }
 
 
-                .List ul a i {
+                .List ul a img {
                     width: 100%;
                     height: auto;
                     display: flex;
@@ -221,19 +286,14 @@
 
     </style>
 </head>
-<body class="EncabezadoBD">
-    <div class="Encabezado">
-        <nav>
-            <ul>
-                <li><a href="menuprincipal.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="subir_imagen.html"><i class="fa-solid fa-add"></i></a></li>
-                <li><a href="perfil.html"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-    </body>
+
         <body>
+            <div class="ContenedorChiquito">
+                <div class="ContenedorImg">
+                    <img class="B" src="imgs/Atrás_2.png" alt="" />
+                </div>
+                <h1 class="P">TuPerfil</h1>
+            </div>
             <div class="Contenedor">
                 <div class="InfoPerfil">
                     <img class="FPerfil" src="imgs/imgp.jpg" alt="" />
@@ -241,10 +301,10 @@
                         <h1 class="NU">"Nombre De Usuario"</h1>
                         <nav class="List">
                             <ul>
-                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
-                                <li><a href="ajustes.html"><i class="fa-solid fa-bars"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                <li><a href="#"><img src="imgs/Estrella.png" alt="" /></a></li>
+                                <li><a href="#"><img src="imgs/Guardar_Flecha_Arriba_.png" alt="" /></a></li>
+                                <li><a href="ajustes.html"><img src="imgs/Ajustes_.png" alt="" /></a></li>
+                                <li><a href="#"><img src="imgs/Compras.png" alt="" /></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -256,7 +316,6 @@
 
                 </div>
                 <div>
-                    <h1 class="TT">Publicaciones</h1>
                     <div class="Imagenes">
                         <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
                         <img class="Imagen" src="imgs/img3.jpg" alt="" /><img class="Imagen" src="imgs/img4.jpg" alt="" />
@@ -264,6 +323,18 @@
                         <img class="Imagen" src="imgs/px3.jpg" alt="" />
                     </div>
                 </div>
+            </div>
+        </body>
+
+        <body class="EncabezadoBD">
+            <div class="Encabezado">
+                <nav>
+                    <ul>
+                        <li><a href="search.html"><img src="imgs/Buscar_.png" alt="" /></a></li>
+                        <li><a href="subir_imagen.html"><img src="imgs/Más.png" alt="" /></a></li>
+                        <li><a href="perfil.html"><img src="imgs/Perfil.png" alt="" /></a></li>
+                    </ul>
+                </nav>
             </div>
         </body>
 </html>

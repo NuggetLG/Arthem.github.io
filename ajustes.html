@@ -8,117 +8,215 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            height: 100vh;
-            display: flex;
-            place-items: center;
+        @media(max-width:800px)
+        {
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+            }
+
+            .Block {
+                height: auto;
+                width: 95%;
+                padding-top: 50px;
+                place-items: center;
+                margin-bottom: 10%;
+                background-color: forestgreen;
+            }
+
+            .Ajus {
+                text-align: center;
+                font-size: 6vw;
+            }
+
+            ul, ol {
+                list-style: none;
+            }
+
+            .nav {
+                height: auto;
+                width: 100%;
+                display: grid;
+                place-items: center;
+            }
+
+                .nav li {
+                    margin-top: 10px;
+                    font-size: 4vw;
+                }
+
+                .nav a {
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 5vw;
+                }
+
+            .TP {
+                background-color: aqua;
+                height: auto;
+                width: 100%;
+            }
+
+            .BTN
+            {
+                margin-top:50px;
+                margin-left:30%;
+                font-size: 5vw;
+            }
+
         }
 
-        .Block
-        {
-            height: 1000px;
-            width: 600px;
-            padding-top:50px;
-            place-items: center;
-            margin:auto;
-        }
+       
 
-        .Ajus{
-            padding-left: 250px;
-        }
+        @media(min-width:801px)
+        {
 
-        ul,ol
-        {
-            list-style:none;
-        }
-        .nav
-        {
-            height: auto;
-            width: 600px;
-            background-color: aqua;
-        }
-        .nav li 
-        {
-            margin-top: 10px;
-            font-size: 30px;
-        }
-        .nav a
-        {
-            font-weight:bold;
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+            }
+
+            .Block {
+                height: auto;
+                width: 80%;
+                padding-top: 50px;
+                place-items: center;
+                margin-bottom: 10%;
+                background-color: forestgreen;
+            }
+
+            .Ajus {
+                font-size: 6vw;
+                margin-left:10px;
+            }
+
+            ul, ol {
+                list-style: none;
+            }
+
+            .nav {
+                height: auto;
+                width: 100%;
+                display: grid;
+                place-items: center;
+            }
+
+                .nav li {
+                    margin-top: 10px;
+                    font-size: 4vw;
+                }
+
+                .nav a {
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 5vw;
+                }
+
+            .TP {
+                background-color: aqua;
+                height: auto;
+                width: 100%;
+            }
+
+            .BTN {
+                margin-top: 50px;
+                margin-left: 25%;
+                font-size: 5vw;
+            }
+
         }
     </style>
 </head>
+
+<body>
+    <div class="Block">
+        <h1 class="Ajus">Ajustes</h1> <br />
+        <nav class="nav">
+            <ul>
+                <div class="TP">
+                <li><a href="">Cuenta</a></li>
+    </div>
+    <ul>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+    </ul>
+    </ul>
+    <ul>
+        <div class="TP" >
+        <li><a href="" >Seguridad</a></li>
+        </div>
+        <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+        </ul>
+    </ul>
+    <ul>
+        <div class="TP">
+        <li><a href="" >Privacidad</a></li>
+        </div>
+        <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+        </ul>
+    </ul>
+    <ul>
+        <div class="TP">
+        <li><a href="" >Publicaciones</a></li>
+        </div>
+        <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+        </ul>
+    </ul>
+    <ul>
+        <div class="TP">
+        <li><a href="" >Informacion</a></li>
+        </div>
+        <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+        </ul>
+    </ul>
+
+    </nav>
+    <form action="perfil.html"><button class="BTN" >Guardar Cambios</button></form>
+
+    </div>
+
+</body>
+
 <body class="EncabezadoBD">
     <div class="Encabezado">
         <nav>
             <ul>
-                <li><a href="menuprincipal.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="subir_imagen.html"><i class="fa-solid fa-add"></i></a></li>
-                <li><a href="perfil.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="search.html"><img src="imgs/Buscar_.png" alt="" /></a></li>
+                <li><a href="subir_imagen.html"><img src="imgs/Más.png" alt="" /></a></li>
+                <li><a href="perfil.html"><img src="imgs/Perfil.png" alt="" /></a></li>
             </ul>
         </nav>
     </div>
-</body>
-
-<body>
-    <div class="Block">
-        <h1 class="Ajus" >Ajustes</h1> <br />
-                         <nav class="nav">
-                             <ul>
-                                 <li><a href="">Cuenta</a></li>
-                                 <ul>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                 </ul>
-                             </ul>
-                             <ul>
-                                 <li><a href="">Seguridad</a></li>
-                                 <ul>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                 </ul>
-                             </ul>
-                             <ul>
-                                 <li><a href="">Privacidad</a></li>
-                                 <ul>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                 </ul>
-                             </ul>
-                             <ul>
-                                 <li><a href="">Publicaciones</a></li>
-                                 <ul>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                 </ul>
-                             </ul>
-                             <ul>
-                                 <li><a href="">Informacion</a></li>
-                                 <ul>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                     <li>Lorem ipsum dolor</li>
-                                 </ul>
-                             </ul>
-
-                         </nav>
-        <form action="perfil.html"><button>Guardar Cambios</button></form>
-
-    </div>
-
 </body>
 </html>

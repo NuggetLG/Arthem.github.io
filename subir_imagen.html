@@ -7,103 +7,179 @@
     <script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
 
     <style>
+
+        @media(max-width:800px)
+        {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .ContenedorImg {
+                
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right:70%;
+                margin-top: 50px;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+            }
+
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 90%;
+            }
+
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,33%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+                gap: 2px;
+            }
+
+            .BTNT {
+                height: auto;
+                width: 50%;
+            }
+
+            .BTNP {
+                font-size: 25px;
+            }
+        }
+
         
-        *
+
+        @media(min-width:801px)
         {
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .ContenedorImg {
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right: 70%;
+                margin-top: 50px;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+            }
+
+            .SDiv
+            {
+                display:flex;
+                margin:10px;
+                
+                gap:5px;
+            }
+
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 60%;
+            }
+
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,30%);
+                height: 30%;
+                width: 100%;
+                justify-content: space-evenly;
+                gap: 2px;
+            }
+
+            .BTNT {
+                height: auto;
+                width: 50%;
+            }
+
+            .BTNP {
+                margin:5px;
+                margin-left: 70%;
+                margin-top: 50px;
+                font-size: 3vw;
+            }
+
+            .htb {
+
+                height:auto;
+                width:60%;
+
+
+            }
+
+            h2{
+                padding-top: 200px;
+                text-align:center;
+                font-size:5vw;
+                margin:5px;
+            }
+
         }
-
-        body {
-            height: auto;
-            display: flex;
-            place-items: center;
-            background-color: gray;
-        }
-
-        .IMG
-        {
-            margin-top:60px;
-            height:auto;
-            width: 225px;
-        }
-
-        .div1
-        {
-            background-color:aqua;
-            height: auto;
-            width:360px;
-        }
-
-        h2
-        {
-            text-align:center;
-            font-size: 20px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 15px;
-        }
-
-        .tagsE {
-            display: grid;
-            grid-template-columns: repeat(3,115px);
-            height: auto;
-            width: 360px;
-            background-color: aqua;
-            justify-content: space-evenly;
-            gap:2px;
-        }
-
-        .BTNT
-        {
-            height:50px;
-            width:110px;
-        }
-
-        .BTNP
-        {
-            font-size: 25px;
-        }
-
-
     </style>
 
 </head>
+
+<body>
+    <div class="ContenedorImg">
+        <img class="B" src="imgs/Atrás_2.png" alt="" />
+    </div>
+    <div class="SDiv">
+        <img class="IMG" src="imgs/img1.jpg" alt="" /> <br />
+                                                       <div class="htb">
+                                                           <h2>Tags</h2>
+                                                           <div class="tagsE">
+                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
+                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
+                                                               <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button>
+                                                           </div>
+                                                           <form action="menuprincipal.html">
+                                                               <button class="BTNP">Publicar</button>
+                                                           </form>
+                                                       </div>
+        
+    </div>
+</body>
+
 <body class="EncabezadoBD">
     <div class="Encabezado">
         <nav>
             <ul>
-                <li><a href="menuprincipal.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="subir_imagen.html"><i class="fa-solid fa-add"></i></a></li>
-                <li><a href="perfil.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="search.html"><img src="imgs/Buscar_.png" alt="" /></a></li>
+                <li><a href="subir_imagen.html"><img src="imgs/Más.png" alt="" /></a></li>
+                <li><a href="perfil.html"><img src="imgs/Perfil.png" alt="" /></a></li>
             </ul>
         </nav>
     </div>
-</body>
-
-<body>
-    <img class="IMG" src="imgs/img1.jpg" alt="" /> <br />
-    <div class="div1">
-        <h2>Titulo de la imagen</h2><br />
-        <p>"Nombre"</p><br />
-    </div>
-    <h2>Tags</h2>
-    <div class="tagsE">
-        <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button ><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button> 
-        <button><img  class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button> 
-        <button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button><button><img class="BTNT" src="imgs/imgt.jpg" alt="" /></button> 
-    </div>
-    <h2>Otro tag?</h2><br />
-    <p>"tag"</p> <br />
-    <form action="menuprincipal.html">
-        <button class="BTNP">Publicar</button>
-     </form>
-
-
-
 </body>
 </html>
