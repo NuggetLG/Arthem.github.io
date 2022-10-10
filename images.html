@@ -1,38 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<link href="css/main.css" rel="stylesheet" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Image</title>
-	<script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
+    <title>images</title>
+    <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        @media(max-width:800px)
+        {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .ContenedorImg {
+                
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right:70%;
+                margin-top: 50px;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            .A {
+                height: auto;
+                width: 20%;
+                background-color: cornsilk;
+                border-radius: 20px;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+                margin-bottom: 100px;
+            }
+
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,33%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsE button
+            {
+                font-size: 4vw;
+                margin:5px;
+                height:80%;
+                border-style:none;
+                background-color:cornflowerblue;
+                border-radius:20px;
+                cursor: pointer;
+
+            }
+
+            .butondiv {
+                width: 100%;
+                margin: auto 20%;
+                display: inline-block;
+
+            }
+
+            .BTNP {
+                font-size: 6vw;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                pointer-events: auto;
+                cursor: pointer;
+            }
+
+            h2 
+            {
+                text-align:center;
+                margin:10px;
+                font-size: 6vw;
+                color:white;
+            }
+        }
+
+        
+
+        @media(min-width:801px)
+         {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .ContenedorImg {
+                
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right:70%;
+                margin-top: 50px;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            .A {
+                height: auto;
+                width: 20%;
+                background-color: cornsilk;
+                border-radius: 20px;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+                margin-bottom: 100px;
+            }
+
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,33%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsE button
+            {
+                font-size: 4vw;
+                margin:5px;
+                height:80%;
+                border-style:none;
+                background-color:cornflowerblue;
+                border-radius:20px;
+                cursor: pointer;
+
+            }
+
+            .butondiv {
+                width: 100%;
+                margin: auto 20%;
+                display: inline-block;
+
+            }
+
+            .BTNP {
+                font-size: 6vw;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                pointer-events: auto;
+                cursor: pointer;
+            }
+
+            h2 
+            {
+                text-align:center;
+                margin:10px;
+                font-size: 6vw;
+                color:white;
+            }
+        }
+
+        
+    </style>
+
 </head>
-<body class="EncabezadoBD">
-	<div class="Encabezado">
-		<nav>
-			<ul>
-				<li><a href="menuprincipal.html"><i class="fa-solid fa-house"></i></a></li>
-				<li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-				<li><a href="subir_imagen.html"><i class="fa-solid fa-add"></i></a></li>
-				<li><a href="perfil.html"><i class="fa-solid fa-user"></i></a></li>
-			</ul>
-		</nav>
-	</div>
-</body>
+
 <body>
-	<p><img src="imgs/example1.png" class="Artistimg"></p>
+    <div class="ContenedorImg">
+        <img class="B" src="imgs/Atrás_2.png" alt="" />
+    </div>
+    <div class="SDiv">
+        <img class="IMG" src="imgs/imagenes2.png" alt="" /> <br />
+                                                       <div class="htb">
+                                                            <div class="butondiv">
 
-		<p>
-		<a href="#comment" class="interactuar">comentario</a>
-		<a href="#like" class="interactuar">like</a>
-		<a href="#download" class="interactuar">descargar</a>
-		<p><h2> <font size="+1">------------------------------------------------</font> </h2>
-		<p><h1> <font size="+3">Imagen de ejemplo</font> </h1>
-		<p><h3>Viktortilla</h3>
-		<a href="#tag1" class="tag">tag1</a>
-		<a href="#tag2" class="tag">tag2</a>
-		<a href="#tag3" class="tag">tag3</a>
-		<p><h2> <font size="+1">------------------------------------------------</font> </h2>
-	</p>
+                                                                   <img class="A" src="imgs/Comentarios_.png" alt="" />
+                                                                   <img class="A" src="imgs/Like.png" alt="" />
+                                                                   <img class="A" src="imgs/Guardar_Flecha_Abajo.png" alt="" />
+                                                           </div>
+                                                           <h2 id="Titulo">Imagen de ejemplo</h2>
+                                                           <h2 id="Titulo">Viktortilla</h2>
+                                                           <div class="tagsE">
+                                                               <button>Texto</button><button>Texto</button><button>Texto</button>
+                                                           </div>
+                                                       </div>
+        
+    </div>
 </body>
 
+<body class="EncabezadoBD">
+    <div class="Encabezado">
+        <nav>
+            <ul>
+                <li><a href="search.html"><img src="imgs/Buscar_.png" alt="" /></a></li>
+                <li><a href="subir_imagen.html"><img src="imgs/Más.png" alt="" /></a></li>
+                <li><a href="perfil.html"><img src="imgs/Perfil.png" alt="" /></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
