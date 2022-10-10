@@ -1,7 +1,7 @@
 body{
     background-color:rgb(110,139,153) ;
 }
-@media (max-width:800px){
+@media (max-width:1400px){
     *{
         margin: 0;
         padding: 0;
@@ -27,7 +27,7 @@ body{
     
 
 }
-@media (min-width:801px){
+@media (min-width:1401px){
     a{
         font-size:100%;
     }
