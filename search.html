@@ -1,78 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Search Screen</title>
-</head>
-<body>
-    <nav class="SearchBar">
-        <div class="Busqueda">
-           <h1> <font size="+5">Busqueda <br> Avanzada</font></h1>
-        </div>
-           
-           
-        <form id="form" role="search"> 
-            <input type="search" id="query" name="q"
-        placeholder="Search..."
-        aria-label="Search through site content">
-        <button>Search</button>
-        </form>
+    <title>search</title>
+    <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/948f123209.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
 
-<body>
-    <nav class="Tags">  
-    </nav>
-        
-        <div>
-            <h1> <font size="+4">Tus tags</font> </h1>
-        </div>
+        @media(max-width:800px)
+        {
 
-        <div class="box">
-            <a href="#divOne" class="button">Add tag</a>
-        </div>
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
-        <div class="overlay" id="divOne">
-            <div class="wrapper">
-                <h2>Añadir tag</h2>
-                <a href="#" class="close">&times;</a>
-                <div class="content">
-                    <div class="container">
-                        <form>
-                            <label></label>
-                            <input type="search" placeholder="Tag name">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+            body 
+            {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+            }
 
-</body>
+            .ContenedorImg {
+                height: auto;
+                width: 14%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right: 70%;
+                margin-top: 50px;
+            }
 
-<body>
-    <nav class="Artistas">  
-    </nav>
-        
-        <div>
-            <p><h1> <font size="+4">Artistas Destacados</font> </h1>
-        </div>
-        <div class="artista">
-            <p><img src="imgs/artist1" class="Artistimg">
-            <a href="Artist1">Viktortilla</a> </p>
+            .ContenedorImg2 {
+                height: auto;
+                width: 100%;
+                background-color: black;
 
-        <div class="artista">
-            <p><img src="imgs/artist2" class="Artistimg">
-            <a href="Artist2">PlaygroundHD</a> </p>
+            }
 
-        <div class="artista">
-            <p><img src="imgs/artist3" class="Artistimg">
-            <a href="Artist3">JosephOtaku</a> </p>
+            .Contenedor2 {
+                width: 90%;
+            }
+
+            .Contenedor3 {
+                width: 90%;
 
 
+            }
 
-</body>
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 90%;
+                margin-left: 10%;
+                margin-right: 10%;
+                border-radius: 10px;
+            }
 
-           
-        
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,35%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsE button
+            {
+                font-size: 4vw;
+                margin:10px;
+                height:80%;
+                border-style:none;
+                background-color: #d0e7ec;
+                border-radius:20px;
+                cursor: pointer;
+
+            }
+
+            .tagsadd {
+                display: grid;
+                grid-template-columns: repeat(3,35%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsadd button
+            {
+                color: black;
+                font-size: 4vw;
+                margin:10px;
+                height:80%;
+                border-style:none;
+                background-color: transparent;
+                border-radius:20px;
+                border: 2px solid #d0e7ec;
+                cursor: pointer;
+
+            }
+
+
+            .topnav 
+            {
+                width: 85%;
+                overflow: hidden;
+                background-color: #90a4a4;
+                display: flex;
+                align-items: center;
+                border-radius: 60px;
+                padding:  5px 20px;
+            }
+
+            .topnav input
+            {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 24px 20px;
+                font-size: 20px;
+                color: #24254D;
+
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+                cursor:pointer;
+            }
+
+            .Block {
+                height: 100%;
+                width: 100%;
+                padding-top: 0px;
+            }
+
+            .avz {
+                text-align: center;
+                padding-left: 20%;
+                font-size: 10vw;
+            }
+
+            .tit {
+                text-align: center;
+                font-size: 6vw;
+                margin-top: 10%;
+            }
+
+            .tit2 {
+                color: cornsilk;
+                text-align: center;
+                font-size: 6vw;
+                padding-right: 70%;
+                margin-top: 10%;
+            }
+        }
+
        
+
+        @media(min-width:801px)
+        {
+
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body 
+            {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+            }
+
+            .ContenedorImg {
+                height: auto;
+                width: 14%;
+                background-color: cornsilk;
+                border-radius: 15px;
+                margin-right: 70%;
+                margin-top: 50px;
+            }
+
+            .ContenedorImg2 {
+                height: auto;
+                width: 100%;
+                background-color: black;
+
+            }
+
+            .Contenedor2 {
+                width: 90%;
+            }
+
+            .Contenedor3 {
+                width: 90%;
+
+
+            }
+
+            .IMG {
+                margin-top: 40px;
+                height: auto;
+                width: 90%;
+                margin-left: 10%;
+                margin-right: 10%;
+                border-radius: 10px;
+            }
+
+            .tagsE {
+                display: grid;
+                grid-template-columns: repeat(3,35%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsE button
+            {
+                font-size: 4vw;
+                margin:10px;
+                height:80%;
+                border-style:none;
+                background-color: #d0e7ec;
+                border-radius:20px;
+                cursor: pointer;
+
+            }
+
+            .tagsadd {
+                display: grid;
+                grid-template-columns: repeat(3,35%);
+                height: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            .tagsadd button
+            {
+                color: black;
+                font-size: 4vw;
+                margin:10px;
+                height:80%;
+                border-style:none;
+                background-color: transparent;
+                border-radius:20px;
+                border: 2px solid #d0e7ec;
+                cursor: pointer;
+
+            }
+
+
+            .topnav 
+            {
+                width: 85%;
+                overflow: hidden;
+                background-color: #90a4a4;
+                display: flex;
+                align-items: center;
+                border-radius: 60px;
+                padding:  5px 20px;
+            }
+
+            .topnav input
+            {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 24px 20px;
+                font-size: 20px;
+                color: #24254D;
+
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+                cursor:pointer;
+            }
+
+            .Block {
+                height: 100%;
+                width: 100%;
+                padding-top: 0px;
+            }
+
+            .avz {
+                text-align: center;
+                padding-left: 20%;
+                font-size: 10vw;
+            }
+
+            .tit {
+                text-align: center;
+                font-size: 6vw;
+                margin-top: 10%;
+            }
+
+            .tit2 {
+                color: cornsilk;
+                text-align: center;
+                font-size: 6vw;
+                padding-right: 70%;
+                margin-top: 10%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="ContenedorImg">
+        <img class="B" src="imgs/Atrás_2.png" alt="" />
+    </div>
+    <div class="Block">
+        <h1 class="avz" id="Titulo">Busqueda Avanzada</h1> <br />
+    </div>
+    <form action="" class="topnav">
+        <input type="text" placeholder="Buscar" name="q">
+    </form>
+    </div>
+    <div class="Contenedor2">
+    <div>
+        <h2 class="tit2" id="Titulo">Tus tags</h2> <br />
+    </div>
+    <div class="tagsE">
+        <button>Texto</button><button>Texto</button><button>Texto</button>
+    </div>
+    <div class="tagsadd">
+        <button>Otro...</button>
+    </div>
+    </div>
+    <ul>
+    <div class="Contenedor3">
+    <div>
+        <h2 class="tit" id="Titulo">Artistas destacados</h2> <br />
+    </div>
+    <div class="Contenedorimg2">
+        <img class="IMG" src="imgs/img6.jpg" alt="" /> <br />      
+    </div>
+    </div>
+    </ul>
+
+</body>
+
+<body class="EncabezadoBD">
+    <div class="Encabezado">
+        <nav>
+            <ul>
+                <li><a href="search.html"><img src="imgs/Buscar_.png" alt="" /></a></li>
+                <li><a href="subir_imagen.html"><img src="imgs/Más.png" alt="" /></a></li>
+                <li><a href="perfil.html"><img src="imgs/Perfil.png" alt="" /></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
