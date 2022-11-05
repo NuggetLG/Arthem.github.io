@@ -8,7 +8,7 @@
 
     <style>
 
-        @media(max-width:1400px)
+        @media only screen and (max-width: 768px)
         {
             * {
                 margin: 0;
@@ -16,19 +16,39 @@
                 box-sizing: border-box;
             }
 
-            .ContenedorImg {
-                
-                height: auto;
-                width: 12%;
-                background-color: cornsilk;
-                border-radius: 15px;
-                margin-right:70%;
+            .ContenedorChiquito {
                 margin-top: 50px;
+                margin-bottom: 20px;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top:20px;
+                color:white;
+                font-size: 6vw;
             }
 
             .B {
                 height: auto;
                 width: 100%;
+            }
+
+            .ContenedorImg {
+                height: 20%;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+            .ILogo {
+                height: 30%;
+                width: 30%;
+                border-radius: 100%;
+                max-height: 125px;
+                max-width: 125px;
             }
 
             body {
@@ -96,11 +116,21 @@
                 font-size: 6vw;
                 color:white;
             }
+
+            .DivT  
+            {
+                margin-left:20%;
+                border-radius:25px;
+                height: 30px;
+                width: 60%;
+                background-color: white;
+            }
+
         }
 
         
 
-        @media(min-width:1401px)
+        @media only screen and (min-width: 768px)
         {
 
             * {
@@ -109,18 +139,39 @@
                 box-sizing: border-box;
             }
 
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
             .ContenedorImg {
                 height: auto;
                 width: 12%;
                 background-color: cornsilk;
                 border-radius: 15px;
-                margin-right: 70%;
-                margin-top: 50px;
             }
 
-            .B {
+            .ContenedorChiquito {
+                margin-top: 50px;
                 height: auto;
                 width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top: 20px;
+                color: white;
+                font-size: 6vw;
+            }
+
+            .ILogo {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                max-height: 115px;
+                max-width: 115px;
             }
 
             body {
@@ -151,13 +202,37 @@
                 width: 100%;
                 justify-content: space-evenly;
                 gap: 2px;
-            } 
+            }
+
+                .tagsE button {
+                    font-size: 3vw;
+                    margin: 10px;
+                    height: 80%;
+                    border-style: none;
+                    background-color: cornflowerblue;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
 
             .BTNP {
-                margin:5px;
-                margin-left: 70%;
+                font-size: 4vw;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                pointer-events: auto;
+                cursor: pointer;
+                color:white;
+            }
+
+            .butondiv {
+                background-color: cornflowerblue;
+                display: grid;
+                height: auto;
+                width: auto;
+                border-radius: 20px;
                 margin-top: 50px;
-                font-size: 3vw;
+                margin-left: 35%;
+                place-content: center;
             }
 
             .htb {
@@ -169,10 +244,19 @@
             }
 
             h2{
-                padding-top: 200px;
+                padding-top:20px;
                 text-align:center;
                 font-size:5vw;
                 margin:5px;
+                color:white;
+            }
+
+            .DivT {
+                margin-left: 10%;
+                border-radius: 25px;
+                height: 40px;
+                width: 80%;
+                background-color: white;
             }
 
         }
@@ -181,12 +265,18 @@
 </head>
 
 <body>
-    <div class="ContenedorImg">
-        <a href="menuprincipal.html"><img class="B" src="imgs/Atrás_2.png" alt="" /></a>
+    <div class="ContenedorChiquito">
+        <div class="ContenedorImg">
+            <a href="menuprincipal.html"><img class="B" src="imgs/Atrás_2.png" alt="" /></a>
+        </div>
+        <h1 id="Titulo" class="P">Tu Perfil</h1>
+        <img class="ILogo" src="imgs/logo2.png" alt="" />
     </div>
     <div class="SDiv">
         <img class="IMG" src="imgs/img1.jpg" alt="" /> <br />
                                                        <div class="htb">
+                                                           <h2 id="Titulo">Titulo</h2>
+                                                           <div class="DivT"></div>
                                                            <h2 id="Titulo">Tags</h2>
                                                            <div class="tagsE">
                                                                <button>Texto</button><button>Texto</button><button>Texto</button>
