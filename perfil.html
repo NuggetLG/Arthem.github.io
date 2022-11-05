@@ -9,7 +9,7 @@
 
     <style>
 
-        @media(max-width:1400px)
+        @media only screen and (max-width: 768px)
         {
             * {
                 box-sizing: border-box;
@@ -35,6 +35,7 @@
             .ContenedorChiquito
             {
                 margin-top:50px;
+                margin-bottom: 20px;
                 height: auto;
                 width:100%;
                 display: flex;
@@ -44,6 +45,7 @@
             .P {
                 padding-right: 50px;
                 color: lightslategrey;
+                font-size: 6vw;
             }
 
             .B
@@ -54,7 +56,7 @@
 
             .ContenedorImg
             {
-                height:auto;
+                height:20%;
                 width:12%;
                 background-color:cornsilk;
                 border-radius:15px;
@@ -64,17 +66,17 @@
                 height: auto;
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                box-sizing:border-box;
-                place-content:center;
+                flex-wrap:wrap;
+                box-sizing: border-box;
+                place-content: center;
+
             }
 
             .FPerfil {
                 height: 35%;
                 width: 35%;
                 border-radius: 100%;
-                padding-top: 25px;
-                padding-left: 10px;
+                background-color: aqua;
             }
 
             .dis {
@@ -83,16 +85,17 @@
                 padding-top: 50px;
                 padding-left: 5px;
                 box-sizing: border-box;
-                display:flex;
-                flex-wrap:wrap;
-                place-content:center;
+                display: flex;
+                flex-wrap: wrap;
+                place-content: center;
+                
             }
 
             .NU {
                 font-size: 6vw;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis
+                text-overflow: ellipsis;
             }
 
             .List ul {
@@ -115,15 +118,19 @@
 
             .IU {
 
-                padding-top: 15px;
                 margin: 10px;
                 height: auto;
                 width: 90%;
                 background-color:lightslategrey;
                 border-radius:15px;
-                text-align:center;
-
+                text-align:left;
                 color:white;
+
+            }
+
+            p
+            {
+                margin: 10px;
             }
 
             .Imagenes {
@@ -146,9 +153,26 @@
                 width: 90%;
                 height: 90%;
             }
+            
+            .ILogo 
+            {
+                height: 30%;
+                width: 30%;
+                border-radius: 100%;
+
+                max-height : 125px;
+                max-width: 125px;
+                
+            }
+
+            h1
+            {
+               text-align:center; 
+                color: lightslategrey;
+            }
         }
 
-        @media(min-width:1401px)
+        @media only screen and (min-width: 768px)
         {
             * {
                 box-sizing: border-box;
@@ -179,21 +203,21 @@
             .P {
                 padding-right: 50px;
                 color: lightslategrey;
+                font-size:6vw;
             }
 
             body {
                 height: auto;
                 display: flex;
+                background-color:white;
                 place-items: center;
-                background-color: gray;
             }
 
             .Contenedor
             {
-                width: 80%;
-                max-width: 2000px;
-                background-color: aqua;
+                width: 98%;
                 place-items:center;
+                
             }
 
 
@@ -203,6 +227,7 @@
                 margin-top: 20px;
                 padding-left: 5px;
                 display: flex;
+                flex-wrap:wrap;
             }
 
             .FPerfil {
@@ -214,26 +239,28 @@
                 padding-top: 30px;
                 padding-left: 10px;
                 box-sizing: border-box;
+                
             }
 
             .dis {
                 height: auto;
-                width: 60%;
+                width: 55%;
                 padding-top: 100px;
                 padding-left: 5px;
-                margin:15px;
+                margin: 15px;
                 box-sizing: border-box;
                 
             }
 
             .NU {
                 padding-top: 5px;
-                font-size: 1.8vw;
+                font-size: 4vw;
+               
             }
 
             .List ul {
-                height: 140px;
-                width: 150px;
+                height: auto;
+                width: auto;
                 list-style: none;
                 display: flex;
                 justify-content: space-evenly;
@@ -251,22 +278,30 @@
                 }
 
             .IU {
-                padding-top: 90px;
                 margin: 10px;
                 height: auto;
                 width: 100%;
-                font-size: 1vw;
-                box-sizing:border-box;
+                font-size: 3vw;
+                box-sizing: border-box;
+                background-color: lightslategrey;
+                border-radius: 15px;
+                text-align: left;
+                color: white;
+            }
+
+            p {
+                margin: 10px;
             }
 
             .Imagenes {
                 height: auto;
                 width: 100%;
                 display: grid;
-                grid-template-columns: 15% 15% 15% 15% 15% 15% ;
+                grid-template-columns: 32% 32% 32%;
                 justify-content: space-evenly;
                 place-items: center;
                 gap: 5px;
+                background-color: lightslategrey;
             }
 
             .TT {
@@ -275,14 +310,187 @@
             }
 
             .Imagen {
-
+                margin-top:20px;
                 width: 100%;
                 height: 100%;
 
-                max-width: 220px;
-                max-height: 220px;
+            }
+
+            .ILogo {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                max-height: 85px;
+                max-width: 85px;
+            }
+
+            h1 {
+                text-align: center;
+                color: lightslategrey;
             }
         }
+
+        @media only screen and (min-width: 992px) {
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+                display: none;
+            }
+
+            .ContenedorImg {
+                display: none;
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+
+            .ContenedorChiquito {
+                margin-top: 50px;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top: 20px;
+                font-size:10vw;
+                color: lightslategrey;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                background-color: white;
+                place-items: center;
+            }
+
+            .Contenedor {
+                margin-bottom:70px;
+                width: 98%;
+                place-items: center;
+            }
+
+
+            .InfoPerfil {
+                height: auto;
+                width: 100%;
+                margin-top: 20px;
+                padding-left: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .FPerfil {
+                height: 30%;
+                width: 30%;
+                max-height: 400px;
+                max-width: 400px;
+                border-radius: 100%;
+                padding-top: 30px;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+
+            .dis {
+                height: auto;
+                width: 30%;
+                padding-top: 100px;
+                padding-left: 5px;
+                margin: 15px;
+                box-sizing: border-box;
+            }
+
+            .NU {
+                padding-top: 5px;
+                font-size: 4vw;
+            }
+
+            .List ul {
+                height: auto;
+                width: auto;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+
+                .List ul a img {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    font-size: 2vw;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+            .IU {
+                margin: 10px;
+                margin-top: 100px;
+                height: auto;
+                width: 33%;
+                font-size: 1.5vw;
+                max-height: 200px;
+                box-sizing: border-box;
+                background-color: lightslategrey;
+                border-radius: 15px;
+                text-align: left;
+                color: white;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                margin: 10px;
+            }
+
+            .Imagenes {
+                height: auto;
+                width: 100%;
+                display: grid;
+                margin-top: 10px;
+                grid-template-columns: 16% 16% 16% 16% 16% 16%;
+                justify-content: space-evenly;
+                place-items: center;
+                gap: 5px;
+                background-color: lightslategrey;
+            }
+
+            .TT {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .Imagen {
+                width: 100%;
+                height: 100%;
+            }
+
+            .ILogo {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                max-height: 225px;
+                max-width: 225px;
+            }
+
+            h1 {
+                text-align: center;
+                color: lightslategrey;
+            }
+        }
+
+     
 
     </style>
 </head>
@@ -293,6 +501,7 @@
                     <a href="menuprincipal.html"><img class="B" src="imgs/Atrás_2.png" alt="" /></a>
                 </div>
                 <h1 id="Titulo" class="P">Tu Perfil</h1>
+                <img class="ILogo" src="imgs/logo2.png" alt="" />
             </div>
             <div class="Contenedor">
                 <div class="InfoPerfil">
@@ -308,13 +517,17 @@
                             </ul>
                         </nav>
                     </div>
-                    <p id="Texto" class="IU">
+                    <div class="IU">
+                    <p id="Texto">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit sapien conubia scelerisque, platea metus sociis nulla pulvinar porttitor feugiat lectus arcu, diam eget luctus facilisis massa a dapibus at tempor.
                         Nascetur fringilla egestas et iaculis mauris sed mus ullamcorper mattis, habitant sociosqu curae curabitur dignissim facilisis nullam ac, duis aliquam gravida venenatis elementum urna quisque sociis. Conubia vestibulum
                         tincidunt lacinia nascetur fames mus, libero euismod primis nullam per hendrerit sociis, faucibus vehicula molestie pulvinar accumsan.
                     </p>
-
+                    </div>
                 </div>
+
+                <h1 id="Titulo">Imagenes</h1>
+
                 <div>
                     <div class="Imagenes">
                         <img class="Imagen" src="imgs/img1.jpg" alt="" /><img class="Imagen" src="imgs/img2.jpg" alt="" />
