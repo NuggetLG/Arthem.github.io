@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
-        @media(max-width:1400px)
+        @media only screen and (max-width: 768px)
         {
 
             * {
@@ -23,19 +23,40 @@
                 background-color: lightslategrey;
             }
 
-            .ContenedorImg {
-                height: auto;
-                width: 12%;
-                background-color: cornsilk;
-                border-radius: 15px;
-                margin-right: 70%;
+            .ContenedorChiquito {
                 margin-top: 50px;
+                margin-bottom: 20px;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top: 20px;
+                color: white;
+                font-size: 6vw;
             }
 
             .B {
                 height: auto;
                 width: 100%;
-                cursor:pointer;
+            }
+
+            .ContenedorImg {
+                height: 20%;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+
+            .ILogo {
+                height: 30%;
+                width: 30%;
+                border-radius: 100%;
+                max-height: 125px;
+                max-width: 125px;
             }
 
             .Block {
@@ -62,6 +83,8 @@
                 .nav a {
                     font-size: 5vw;
                     margin-left: 20px;
+                    text-decoration: none;
+                    color: white;
                 }
 
             .TP {
@@ -81,6 +104,7 @@
                 border-style:none;
                 border-radius:20px;
                 cursor:pointer;
+                color:white;
             }
 
             .Content {
@@ -110,20 +134,19 @@
 
        
 
-        @media(min-width:1401px)
+        @media only screen and (min-width: 768px)
         {
 
             * {
                 margin: 0;
                 padding: 0;
             }
-            .ContenedorImg {
+
+            body {
                 height: auto;
-                width: 12%;
-                background-color: cornsilk;
-                border-radius: 15px;
-                margin-right: 70%;
-                margin-top: 50px;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
             }
 
             .B {
@@ -131,23 +154,46 @@
                 width: 100%;
             }
 
-            body {
+            .ContenedorImg {
                 height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+
+            .ContenedorChiquito {
+                margin-top: 50px;
+                height: auto;
+                width: 100%;
                 display: flex;
-                place-items: center;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top: 20px;
+                color: white;
+                font-size: 6vw;
+            }
+
+            .ILogo {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                max-height: 115px;
+                max-width: 115px;
             }
 
             .Block {
                 height: auto;
-                width: 80%;
+                width: 95%;
                 padding-top: 50px;
-                place-items: center;
                 margin-bottom: 10%;
             }
 
             .Ajus {
-                font-size: 6vw;
-                margin-left:10px;
+                text-align: center;
+                font-size: 10vw;
             }
 
             ul, ol {
@@ -157,82 +203,230 @@
             .nav {
                 height: auto;
                 width: 100%;
-                display: grid;
-                place-items: center;
             }
 
                 .nav a {
-                    font-weight: bold;
-                    text-align: center;
                     font-size: 5vw;
-                }
-
-                .nav li {
-                    margin-top: 10px;
-                    font-size: 4vw;
+                    margin-left: 20px;
+                    text-decoration:none;
+                    color:white;
                 }
 
             .TP {
                 height: auto;
-                width: 100%;
+                width: 90%;
+                margin: 5%;
+                background-color: cornflowerblue;
+                border-radius: 20px;
             }
 
             .BTN {
                 margin-top: 50px;
-                margin-left: 25%;
+                margin-left: 30%;
                 font-size: 5vw;
+                background-color: cornflowerblue;
+                border-style: none;
+                border-radius: 20px;
+                cursor: pointer;
+                color:white;
             }
 
+            .Content {
+                margin-top: 10px;
+                font-size: 5vw;
+                margin-left: 8%;
+            }
+
+            .checkbox {
+                background-color: white;
+                height: auto;
+                width: 5%;
+                margin-top: 15px;
+                box-sizing: border-box;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            .ContentUl {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+
+        }
+
+        @media only screen and (min-width: 992px)
+        {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                height: auto;
+                display: flex;
+                place-items: center;
+                background-color: lightslategrey;
+            }
+
+            .B {
+                height: auto;
+                width: 100%;
+            }
+
+            .ContenedorImg {
+                height: auto;
+                width: 12%;
+                background-color: cornsilk;
+                border-radius: 15px;
+            }
+
+            .ContenedorChiquito {
+                margin-top: 50px;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .P {
+                padding-right: 50px;
+                margin-top: 20px;
+                color: white;
+                font-size: 6vw;
+            }
+
+            .ILogo {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                max-height: 115px;
+                max-width: 115px;
+            }
+
+            .Block {
+                height: auto;
+                width: 70%;
+                padding-top: 50px;
+                margin-bottom: 10%;
+            }
+
+            .Ajus {
+                text-align: center;
+                font-size: 10vw;
+            }
+
+            ul, ol {
+                list-style: none;
+            }
+
+            .nav {
+                height: auto;
+                width: 100%;
+            }
+
+                .nav a {
+                    font-size: 5vw;
+                    margin-left: 20px;
+                    text-decoration: none;
+                    color: white;
+                }
+
+            .TP {
+                height: auto;
+                width: 90%;
+                margin: 5%;
+                background-color: cornflowerblue;
+                border-radius: 20px;
+            }
+
+            .BTN {
+                margin-top: 50px;
+                margin-left: 30%;
+                font-size: 5vw;
+                background-color: cornflowerblue;
+                border-style: none;
+                border-radius: 20px;
+                cursor: pointer;
+                color: white;
+            }
+
+            .Content {
+                margin-top: 10px;
+                font-size: 3vw;
+                margin-left: 8%;
+            }
+
+            .checkbox {
+                background-color: white;
+                height: auto;
+                width: 5%;
+                margin-top: 15px;
+                box-sizing: border-box;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            .ContentUl {
+                display: flex;
+                width:100%;
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="ContenedorImg">
-        <a href="menuprincipal.html"><img class="B" src="imgs/Atrás_2.png" alt="" /></a>
+
+    <div class="ContenedorChiquito">
+        <div class="ContenedorImg">
+            <a href="menuprincipal.html"><img class="B" src="imgs/Atrás_2.png" alt="" /></a>
+        </div>
+        <h1 id="Titulo" class="P">Ajustes</h1>
+        <img class="ILogo" src="imgs/logo2.png" alt="" />
     </div>
     <div class="Block">
-        <h1 class="Ajus" id="Titulo">Ajustes</h1> <br />
+
         <nav class="nav">
             <ul>
                 <div class="TP">
-                <li><a class="Titulo" id="Texto"  href="">Editar Perfil</a></li>
-    </div>
+                    <li><a class="Titulo" id="Texto" href="">Editar Perfil</a></li>
+                </div>
     </ul>
     <ul>
         <div class="TP">
-        <li><a id="Texto" href="">Privacidad</a></li>
+            <li><a id="Texto" href="">Privacidad</a></li>
         </div>
     </ul>
     <ul>
         <div class="TP">
-        <li><a id="Texto" href="">Pagos</a></li>
+            <li><a id="Texto" href="">Pagos</a></li>
         </div>
         <ul class="ContentUl">
-            <li id="Texto" class="Content">Lorem ipsum dolor</li>
+                <li id="Texto" class="Content">Lorem ipsum dolor</li>
             <div class="checkbox"></div>
-            <li id="Texto" class="Content">Lorem ipsum dolor</li>
-            <div  class="checkbox"></div>
-            <li id="Texto" class="Content">Lorem ipsum dolor</li>
+                <li id="Texto" class="Content">Lorem ipsum dolor</li>
+            <div class="checkbox"></div>
+                <li id="Texto" class="Content">Lorem ipsum dolor</li>
             <div class="checkbox"></div>
         </ul>
     </ul>
     <ul>
         <div class="TP">
-        <li><a id="Texto" href="">Seguridad</a></li>
+             <li><a id="Texto" href="">Seguridad</a></li>
         </div>
 
     </ul>
     <ul>
         <div class="TP">
-        <li><a id="Texto" href="">Ayuda</a></li>
+            <li><a id="Texto" href="">Ayuda</a></li>
         </div>
     </ul>
 
     </nav>
     <form action="perfil.html"><button class="BTN">Guardar Cambios</button></form>
 
-    </div>
+  </div>
 
 </body>
 
